@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "กรุงเทพมหานคร",
+      "img": "https://picsum.photos/536/354",
+      "author": "Devcat",
+      "body": "กรุงเทพมหานคร เป็นเมืองหลวงและนครที่มีประชากรมากที่สุดของประเทศไทย เป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคารการพาณิชย์ การสื่อสาร และความเจริญของประเทศ"
+    },
+    {
+      "id": 2,
+      "title": "ตราด",
+      "img": "https://picsum.photos/536/354",
+      "author": "Devcat",
+      "body": "กรุงเทพมหานคร เป็นเมืองหลวงและนครที่มีประชากรมากที่สุดของประเทศไทย เป็นศูนย์กลางการปกครอง การศึกษา การคมนาคมขนส่ง การเงินการธนาคารการพาณิชย์ การสื่อสาร และความเจริญของประเทศ"
+    },
+    {
+      "title": "Dong",
+      "img": "https://picsum.photos/id/22/4434/3729",
+      "body": "https://meet.google.com/kwc-vaju-ess\n==================================\nhttps://github.com/patipan-patisampita/Dip2_ModernWeb-week4_22565-\n==================================\nhttps://picsum.photos/images\n==================================\nhttps://tailwindcss.com/docs/guides/vite#vue\n==================================\nInstall Tailwind CSS with Vite\n1.Create your project\n- npm create vite@latest my-project -- --template vue\n\n2. Install Tailwind CSS\nInstall tailwindcss and its peer dependencies via npm, and then run the init command to generate both\ntailwind.config.cjs and postcss.config.cjs.\n- npm install -D tailwindcss postcss autoprefixer\n- npx tailwindcss init -p\n\n3. Configure your template paths\nAdd the paths to all of your template files in your tailwind.config.cjs file.\n=================\n/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{vue,js,ts,jsx,tsx}\",\n  ],\n  theme: {\n    extend: {},\n  },\n  plugins: [],\n}\n=================\n\n4.Add the Tailwind directives to your CSS\nAdd the @tailwind directives for each of Tailwind’s layers to your ./src/style.css file.\n=================\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n=================\n5.Start your build process\nRun your build process with npm run dev.\n- npm run dev\n=================\n6.Start using Tailwind in your project\nStart using Tailwind’s utility classes to style your content.\n=================\n<template>\n  <h1 class=\"text-3xl font-bold underline\">\n    Hello world!\n  </h1>\n</template>\n=================\n\n5.Vue Router\n- npm install vue-router@4\n\n6.Install Vuex\n- npm install vuex@next --save\n7. import  {fileURLToPath,URL}\n\n=================\nimport {fileURLToPath,URL} from \"url\"\n\nimport { defineConfig } from 'vite'\nimport vue from '@vitejs/plugin-vue'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [vue()],\n  resolve:{\n    alias:{\n      \"@\":fileURLToPath(new URL(\"./src\",import.meta.url)),\n    }\n  }\n})\n=================\n\n8. import file\nimport { createRouter, createWebHistory } from \"vue-router\";\n\nimport Home from '../views/Home.vue'\n\nconst router = createRouter({\n    history: createWebHistory(import.meta.env.BASE_URL),\n    routes: [\n        {\n            path: '/',\n            name: \"home\",\n            component: Home,\n        },\n    ]\n})\n\nexport default router;\n=================\n9.Install JSON Server\nhttps://www.npmjs.com/package/json-server\n- npm install -g json-server\n=================\n10.Run son-server\n- json-server data.json\n=================\n\n\n11.Axios\nhttps://axios-http.com/docs/intro\n\n- npm install axios",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
